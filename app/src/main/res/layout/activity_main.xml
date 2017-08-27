@@ -1,13 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.eventbus.demo.myeventbusdemo.MainActivity">
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/id_main_btn_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="跳转到发送页面" />
+    <Button
+        android:id="@+id/id_main_btn_sticky"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="发送粘性事件跳转到发送页面" />
 
     <TextView
+        android:text="接受显示的结果"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
-</RelativeLayout>
+        android:layout_margin="10sp"/>
+    <TextView
+        android:id="@+id/id_main_btn_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"/>
+
+
+</LinearLayout>
